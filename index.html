@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muhammed Esat Demir — Yazılım Mühendisi · Ürün & AI Entegrasyonu. Clean Architecture, React / React Native, FastAPI, .NET 8 ve çoklu-model fallback'li AI pipeline'larıyla üretime çıkan sistemler." />
+  <meta name="author" content="Muhammed Esat Demir" />
+  <meta name="theme-color" content="#0B0D12" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Muhammed Esat Demir — Yazılım Mühendisi" />
+  <meta property="og:description" content="Üç ekosistemde (kamu · kurumsal · start-up) üretime çıkan ürünler geliştiren yazılım mühendisi · Ürün & AI Entegrasyonu." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title>Muhammed Esat Demir — Yazılım Mühendisi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="assets/css-new/style.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link" data-i18n="skip">İçeriğe atla</a>
+
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__brand" aria-label="Ana sayfa">
+        <span class="nav__brand-mark">MD</span>
+        <span class="nav__brand-text">Muhammed Esat Demir</span>
+      </a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#hakkimda" data-i18n="nav.about">Hakkımda</a></li>
+        <li><a href="#deneyim" data-i18n="nav.experience">Deneyim</a></li>
+        <li><a href="#yetenekler" data-i18n="nav.skills">Yetenekler</a></li>
+        <li><a href="#projeler" data-i18n="nav.projects">Projeler</a></li>
+        <li><a href="#egitim" data-i18n="nav.education">Eğitim</a></li>
+        <li><a href="#referanslar" data-i18n="nav.references">Referanslar</a></li>
+        <li><a href="#iletisim" data-i18n="nav.contact">İletişim</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <div class="lang-switch" role="group" aria-label="Dil seçici">
+          <button class="lang-switch__btn is-active" data-lang="tr" aria-pressed="true">TR</button>
+          <button class="lang-switch__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Tema değiştir" title="Tema değiştir">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="nav__burger" id="navBurger" aria-label="Menüyü aç/kapat" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <canvas id="particles"></canvas>
+        <div class="hero__glow hero__glow--a"></div>
+        <div class="hero__glow hero__glow--b"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__badge">
+          <span class="status-dot"></span>
+          <span data-i18n="hero.badge">Yeni fırsatlara açık · Junior</span>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="hero__title-line">Muhammed Esat Demir</span>
+          <span class="hero__title-sub" data-i18n-html="hero.role">Yazılım Mühendisi · <span class="accent">Ürün &amp; AI Entegrasyonu</span></span>
+        </h1>
+
+        <p class="hero__lede" data-i18n-html="hero.lede">
+          Üç farklı ekosistemde (kamu, kurumsal, start-up) <strong>gerçek kullanıcıyla buluşmaya hazır</strong> sistemler kurdum.
+          Clean Architecture, React/React Native, FastAPI ve .NET 8 tarafında ölçeklenebilir sistemler; Gemini ve
+          Whisper tabanlı orkestrasyonlarla çoklu-model fallback'li AI pipeline'ları tasarlıyorum.
+        </p>
+
+        <div class="hero__cta">
+          <a href="#projeler" class="btn btn--primary">
+            <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+            <span data-i18n="hero.cta.projects">Öne Çıkan Projeleri Gör</span>
+          </a>
+          <a href="#iletisim" class="btn btn--ghost">
+            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+            <span data-i18n="hero.cta.contact">İletişime Geç</span>
+          </a>
+        </div>
+
+        <ul class="hero__meta">
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span data-i18n="hero.meta.location">İstanbul, Türkiye</span></li>
+          <li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> <span data-i18n="hero.meta.edu">İstinye Üniversitesi · AGNO 3.58</span></li>
+          <li><i class="fa-solid fa-briefcase" aria-hidden="true"></i> <span data-i18n="hero.meta.work">Kamu · Kurumsal · Start-up Deneyimi</span></li>
+          <li><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> <span data-i18n="hero.meta.availability">Haziran 2026'dan itibaren tam zamanlı</span></li>
+        </ul>
+      </div>
+
+      <a href="#hakkimda" class="hero__scroll" aria-label="Aşağı kaydır">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="section" id="hakkimda">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__kicker" data-i18n="about.kicker">01 — Hakkımda</span>
+          <h2 class="section__title" data-i18n-html="about.title">Kod yazmaktan çok, <span class="accent">ürün çıkarmaktan</span> keyif alıyorum.</h2>
+        </header>
+
+        <div class="about">
+          <div class="about__text">
+            <p data-i18n="about.p1">
+              Kamu (T.C. İletişim Başkanlığı), kurumsal (Merzigo) ve start-up (Afinitem) olmak
+              üzere üç farklı ekosistemde backend'den mobile uçtan uca geliştirme tecrübesi edinmiş,
+              canlıya çıkmaya hazır üç ürün inşa etmiş bir Yazılım Mühendisliği son sınıf
+              öğrencisiyim.
+            </p>
+            <p data-i18n-html="about.p2">
+              Kurumsal süreçlerde <strong>.NET 8, Clean Architecture ve CQRS</strong> ile ölçeklenebilir
+              API'ler; web ve mobilde <strong>React / React Native ve TypeScript</strong> ile modern
+              arayüzler geliştiriyorum. Ayrıca <strong>FastAPI ve PostgreSQL</strong> ile algoritmik
+              servisler kuruyor; <strong>Gemini, Whisper ve Together AI</strong> ile hata toleransı ve
+              model fallback'i olan AI pipeline'ları tasarlıyorum.
+            </p>
+            <p data-i18n-html="about.availability">
+              <strong>Müsaitlik:</strong> Şu an iki stajı haftayı bölerek paralel yürütüyorum
+              (Merzigo + Afinitem, gönüllü). Haziran 2026 ortasından itibaren
+              <strong>tam zamanlı</strong> rollere açığım.
+            </p>
+          </div>
+
+          <ul class="about__stats" role="list">
+            <li class="stat">
+              <span class="stat__value">3.58</span>
+              <span class="stat__label" data-i18n="about.stat.gpa">AGNO · 4.00</span>
+            </li>
+            <li class="stat">
+              <span class="stat__value">3</span>
+              <span class="stat__label" data-i18n-html="about.stat.intern">Farklı Ekosistem<br><em class="stat__sub">Kamu · Kurumsal · Start-up</em></span>
+            </li>
+            <li class="stat">
+              <span class="stat__value">3</span>
+              <span class="stat__label" data-i18n="about.stat.shipped">Canlıya Çıkan Ürün</span>
+            </li>
+            <li class="stat">
+              <span class="stat__value">15+</span>
+              <span class="stat__label" data-i18n="about.stat.certs">Sertifika & Program</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="deneyim">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__kicker" data-i18n="exp.kicker">02 — Deneyim</span>
+          <h2 class="section__title" data-i18n-html="exp.title">Üç ekosistem · <span class="accent">backend'den mobile</span>.</h2>
+        </header>
+
+        <ol class="timeline" role="list">
+
+          <li class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <span class="timeline__date"><span data-i18n="date.mar2026now">Mart 2026 — Devam Ediyor</span></span>
+                <span class="timeline__loc">İstanbul · Hibrit · Part-time</span>
+              </div>
+              <h3 class="timeline__role" data-i18n="exp.role.intern">Yazılım Stajyeri</h3>
+              <p class="timeline__company">Merzigo</p>
+              <p class="timeline__desc">
+                .NET 8 Web API, C# ve PostgreSQL ile Clean Architecture + CQRS prensiplerine uygun, katmanlı
+                mimaride RESTful API geliştiriyorum. YouTube içerik üreticileri için dış kaynaklardan (Excel/CSV)
+                veri okuma, filtreleme ve export/import süreçlerini yöneten bir veri yönetim sistemi tasarlıyorum.
+                Projeyi Dockerize edip Swagger UI üzerinden test ediyor; EF Core 8 ile veritabanı operasyonlarını
+                yönetiyorum.
+              </p>
+              <div class="chips">
+                <span class="chip">.NET 8</span>
+                <span class="chip">C#</span>
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">EF Core</span>
+                <span class="chip">CQRS</span>
+                <span class="chip">Docker</span>
+                <span class="chip">Swagger</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <span class="timeline__date"><span data-i18n="date.oct2025now">Ekim 2025 — Devam Ediyor</span></span>
+                <span class="timeline__loc">İstanbul · Ofiste · Part-time</span>
+              </div>
+              <h3 class="timeline__role" data-i18n="exp.role.intern">Yazılım Stajyeri</h3>
+              <p class="timeline__company">Afinitem LLC</p>
+              <p class="timeline__desc">
+                Hızlı tempolu bir start-up ortamında; Kura platformu (FastAPI + React Native + Web), otonom WhatsApp CRM asistanı (n8n + OpenAI + Supabase) ve otonom YouTube içerik fabrikası (n8n + Gemini) olmak üzere üç farklı ürünün backend / API mimarisini ve mobil deneyimini uçtan uca geliştirdim.
+              </p>
+              <div class="chips">
+                <span class="chip">React Native</span>
+                <span class="chip">FastAPI</span>
+                <span class="chip">Supabase</span>
+                <span class="chip">OpenAI</span>
+                <span class="chip">n8n</span>
+                <span class="chip">Gemini</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <span class="timeline__date">Temmuz 2025 — Eylül 2025</span>
+                <span class="timeline__loc">Ankara · Ofiste · Tam Zamanlı</span>
+              </div>
+              <h3 class="timeline__role" data-i18n="exp.role.intern">Yazılım Stajyeri</h3>
+              <p class="timeline__company">T.C. İletişim Başkanlığı — Bilgi İşlem Dairesi</p>
+              <p class="timeline__desc">
+                React, TypeScript ve Node.js kullanarak kurumsal ihtiyaçlara yönelik, ölçeklenebilir web
+                uygulamaları geliştirdim. Rol tabanlı yetkilendirme, kimlik doğrulama ve güvenli veri işleme
+                süreçleri üzerinde çalıştım. Dosya işleme, veri dönüştürme ve otomasyon odaklı yardımcı araçlar
+                tasarlayıp sistemlere entegre ettim.
+              </p>
+              <div class="chips">
+                <span class="chip">React</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">Node.js</span>
+                <span class="chip">RBAC</span>
+                <span class="chip">Güvenli Veri İşleme</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <span class="timeline__date">Ekim 2024 — Haziran 2025</span>
+                <span class="timeline__loc">İstinye Üniversitesi</span>
+              </div>
+              <h3 class="timeline__role" data-i18n="exp.role.gdg">Proje Koordinatörü · Core Team</h3>
+              <p class="timeline__company">Google Developer Groups on Campus · İstinye Üniversitesi</p>
+              <p class="timeline__desc">
+                SQL ve AI odaklı teknik etkinlikleri organize ettim; TechNova Zirvesi organizasyon
+                ekibinde görev aldım.
+              </p>
+              <div class="chips">
+                <span class="chip">Proje Yönetimi</span>
+                <span class="chip">Etkinlik Organizasyonu</span>
+                <span class="chip">İçerik Üretimi</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <span class="timeline__date">Ağustos 2024 — Eylül 2024</span>
+                <span class="timeline__loc">Boğaziçi Üniversitesi × AVD Consultancy</span>
+              </div>
+              <h3 class="timeline__role" data-i18n="exp.role.intern">Yazılım Stajyeri</h3>
+              <p class="timeline__company">Boğaziçi Üniversitesi · Feed Forward Talent</p>
+              <p class="timeline__desc">
+                AI destekli KPI hesaplama ve analiz süreçlerine ekip içinde katkı sağladım. Streamlit
+                tabanlı kullanıcı arayüzü, Altair / Pandas / SQLite ile veri işleme ve raporlama
+                çalışmalarında görev aldım.
+              </p>
+              <div class="chips">
+                <span class="chip">Streamlit</span>
+                <span class="chip">Pandas</span>
+                <span class="chip">Altair</span>
+                <span class="chip">SQLite</span>
+                <span class="chip">Gemini API</span>
+              </div>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="yetenekler">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__kicker" data-i18n="skills.kicker">03 — Yetenekler</span>
+          <h2 class="section__title" data-i18n-html="skills.title">Kullandığım <span class="accent">teknoloji yığını</span>.</h2>
+        </header>
+
+        <div class="skills">
+          <article class="skill-card">
+            <div class="skill-card__head">
+              <i class="fa-solid fa-code" aria-hidden="true"></i>
+              <h3 data-i18n="skills.cat.langs">Diller</h3>
+            </div>
+            <ul class="chips">
+              <li class="chip chip--strong">Python</li>
+              <li class="chip chip--strong">JavaScript (ES6+)</li>
+              <li class="chip chip--strong">TypeScript</li>
+              <li class="chip chip--strong">C#</li>
+              <li class="chip">SQL</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__head">
+              <i class="fa-solid fa-display" aria-hidden="true"></i>
+              <h3 data-i18n="skills.cat.frontend">Frontend & Mobil</h3>
+            </div>
+            <ul class="chips">
+              <li class="chip">React</li>
+              <li class="chip">Next.js 14</li>
+              <li class="chip">React Native · Expo</li>
+              <li class="chip">EAS Build</li>
+              <li class="chip">Reanimated</li>
+              <li class="chip">Zustand</li>
+              <li class="chip">Material-UI</li>
+              <li class="chip">Tailwind CSS</li>
+              <li class="chip">HTML5 · CSS3</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__head">
+              <i class="fa-solid fa-server" aria-hidden="true"></i>
+              <h3 data-i18n="skills.cat.backend">Backend</h3>
+            </div>
+            <ul class="chips">
+              <li class="chip">.NET 8 Web API</li>
+              <li class="chip">FastAPI</li>
+              <li class="chip">Django · DRF</li>
+              <li class="chip">NestJS</li>
+              <li class="chip">Node.js · Express</li>
+              <li class="chip">Flask</li>
+              <li class="chip">REST API</li>
+              <li class="chip">JWT · RBAC</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__head">
+              <i class="fa-solid fa-database" aria-hidden="true"></i>
+              <h3 data-i18n="skills.cat.db">Veritabanı & Cache</h3>
+            </div>
+            <ul class="chips">
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">MySQL</li>
+              <li class="chip">SQLite</li>
+              <li class="chip">Redis</li>
+              <li class="chip">Supabase</li>
+              <li class="chip">EF Core</li>
+              <li class="chip">Sequelize</li>
+              <li class="chip">Drizzle ORM</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__head">
+              <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+              <h3 data-i18n="skills.cat.ai">AI & Veri</h3>
+            </div>
+            <ul class="chips">
+              <li class="chip">Gemini API</li>
+              <li class="chip">OpenAI</li>
+              <li class="chip">Whisper · faster-whisper</li>
+              <li class="chip">TTS · Gemini Generative</li>
+              <li class="chip">BERTurk · Hugging Face</li>
+              <li class="chip">TensorFlow · Keras</li>
+              <li class="chip">Pandas · NumPy</li>
+              <li class="chip">n8n</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__head">
+              <i class="fa-solid fa-sitemap" aria-hidden="true"></i>
+              <h3 data-i18n="skills.cat.arch">Mimari & DevOps</h3>
+            </div>
+            <ul class="chips">
+              <li class="chip">Clean Architecture</li>
+              <li class="chip">CQRS</li>
+              <li class="chip">Microservices</li>
+              <li class="chip">Monorepo · Turbo</li>
+              <li class="chip">Docker</li>
+              <li class="chip">GitHub Actions · CI/CD</li>
+              <li class="chip">Railway</li>
+              <li class="chip">Vercel</li>
+              <li class="chip">Swagger / OpenAPI</li>
+              <li class="chip">Git · GitFlow</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="langs">
+          <span class="langs__label" data-i18n="skills.langs">Diller:</span>
+          <span class="lang" data-i18n-html="skills.lang.tr"><strong>Türkçe</strong> · Ana dil</span>
+          <span class="lang-sep">·</span>
+          <span class="lang" data-i18n-html="skills.lang.en"><strong>İngilizce</strong> · B2</span>
+          <span class="lang-sep">·</span>
+          <span class="lang" data-i18n-html="skills.lang.de"><strong>Almanca</strong> · A1</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="projeler">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__kicker" data-i18n="proj.kicker">04 — Projeler</span>
+          <h2 class="section__title" data-i18n-html="proj.title">Öne çıkan projeler · <span class="accent">ürün, kurumsal, derin teknoloji</span>.</h2>
+          <p class="section__lede section__lede--compact" data-i18n="proj.lede">
+            Faz 01: ürün · Faz 02: kurumsal mimari · Faz 03: AI &amp; veri.
+          </p>
+        </header>
+
+        <aside class="proj-disclaimer" role="note">
+          <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+          <p data-i18n-html="proj.disclaimer">
+            <strong>Not:</strong> Aşağıda listelenen projelerin bir kısmı ticari ürün (SaaS) statüsünde
+            olduğundan veya kamu/kurumsal gizlilik sözleşmeleri (NDA) gereğince kapalı kaynaktır.
+            Mimarilerini detaylıca dokümante ettiğim açık kaynaklı projelerimi ve kodlama pratiklerimi
+            incelemek isterseniz, <a href="https://github.com/muhammedesatdemir" target="_blank" rel="noopener">GitHub profilimi</a> ziyaret edebilirsiniz.
+          </p>
+        </aside>
+
+        <div class="projects">
+
+          <article class="project project--featured">
+            <header class="project__head">
+              <div class="project__titles">
+                <span class="project__phase">Faz 01 · Yakında Canlıya</span>
+                <h3 class="project__name">Kura — Afinitem</h3>
+                <p class="project__subtitle">Aile Hekimliği ek yerleştirme (kura) platformu · Web + Mobil</p>
+              </div>
+              <span class="badge badge--live" title="Hedef platformlar">
+                <span class="badge__pulse"></span>
+                Web + iOS + Android
+              </span>
+            </header>
+            <p class="project__desc">
+              Resmi hekim listesi ve boş pozisyon listesini içeri alıp, hekimlerden sıralı tercihleri toplayan ve
+              <strong>cascading (zincirleme) atama</strong> mantığıyla dinamik bir yerleştirme simülasyonu
+              çalıştıran uçtan uca bir platform. FastAPI backend, web ve React Native mobil olmak üzere
+              üç uygulama paketinden oluşan tek bir monorepo.
+            </p>
+            <ul class="project__highlights">
+              <li>Monorepo: FastAPI backend · Web frontend · React Native mobil</li>
+              <li>Dinamik cascading yerleştirme algoritması</li>
+              <li>CSV + PDF admin içeri aktarımları, dönem yaşam döngüsü yönetimi</li>
+              <li>Async SQLAlchemy + httpx ile I/O-bound istekler için asenkron iş akışı</li>
+            </ul>
+            <div class="chips chips--mono">
+              <span class="chip">FastAPI</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">React Native</span>
+              <span class="chip">Monorepo</span>
+              <span class="chip">Async SQLAlchemy</span>
+            </div>
+          </article>
+
+          <article class="project project--featured">
+            <header class="project__head">
+              <div class="project__titles">
+                <span class="project__phase">Faz 01 · Yakında Canlıya</span>
+                <h3 class="project__name">Orbacle</h3>
+                <p class="project__subtitle">Minimalist mistik kehanet mobil uygulaması · iOS / Android</p>
+              </div>
+              <span class="badge badge--live" title="Hedef platformlar">
+                <span class="badge__pulse"></span>
+                iOS + Android
+              </span>
+            </header>
+            <p class="project__desc">
+              Expo SDK 54 ve katı tipli (strict) TypeScript ile geliştirilmiş, tamamen çevrim-dışı
+              çalışan bir mobil ürün. Reanimated tabanlı animasyonlu kristal küre, tam i18n (TR/EN),
+              AsyncStorage geçmişi, erişilebilirlik öznitelikleri ve EAS derleme hattı ile mağazaya
+              çıkmaya hazır.
+            </p>
+            <ul class="project__highlights">
+              <li>Expo SDK 54 · React 19 · katı tipli (strict) TypeScript</li>
+              <li>Reanimated 4 ile katmanlı animasyonlu küre (idle nabız + açılış sekansı)</li>
+              <li>İki dilli, AsyncStorage üzerinde yerel geçmiş, tam erişilebilirlik</li>
+              <li>EAS derleme profilleri (geliştirme / ön izleme / canlı)</li>
+            </ul>
+            <div class="chips chips--mono">
+              <span class="chip">React Native</span>
+              <span class="chip">Expo</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Reanimated</span>
+              <span class="chip">EAS</span>
+            </div>
+          </article>
+
+          <article class="project project--featured">
+            <header class="project__head">
+              <div class="project__titles">
+                <span class="project__phase">Faz 01 · Yakında Canlıya</span>
+                <h3 class="project__name">Vardiya Planı (Zekra)</h3>
+                <p class="project__subtitle">Vardiyalı çalışanlar için local-first mobil uygulama</p>
+              </div>
+              <span class="badge badge--live" title="Hedef platformlar">
+                <span class="badge__pulse"></span>
+                iOS + Android
+              </span>
+            </header>
+            <p class="project__desc">
+              Yerel-öncelikli (local-first), ağ bağımlılığı olmayan bir React Native / Expo uygulaması.
+              Döngüsel şablonlardan ay bazında vardiya üretimi, ay geçişlerinde cycle süreklilik matematiği,
+              aralık revize / kilitli gün koruması ve Vitest ile yazılmış birim testler içeriyor.
+            </p>
+            <ul class="project__highlights">
+              <li>Zustand store · dosya repository'den senkron hidrasyon</li>
+              <li>Özel zamanlama motoru: döngü ofseti (cycle offset) matematiği, gece aşan vardiya kuralı</li>
+              <li>Açık / koyu tema, Türkçeye duyarlı dizge işleme ve CSV dışa aktarım</li>
+              <li>Vitest birim testleri ve arayüz tabanlı repository (File + Memory)</li>
+            </ul>
+            <div class="chips chips--mono">
+              <span class="chip">React Native</span>
+              <span class="chip">Expo</span>
+              <span class="chip">Zustand</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Vitest</span>
+            </div>
+          </article>
+
+          <article class="project project--featured">
+            <header class="project__head">
+              <div class="project__titles">
+                <span class="project__phase">Faz 02 · Kurumsal Mimari</span>
+                <h3 class="project__name">YouTube Kanal Yönetimi API</h3>
+                <p class="project__subtitle">Merzigo · İçerik yönetimi için kurumsal REST API</p>
+              </div>
+              <span class="badge badge--enterprise">
+                <i class="fa-solid fa-building" aria-hidden="true"></i>
+                Kurumsal / Merzigo
+              </span>
+            </header>
+            <p class="project__desc">
+              YouTube kanallarının veritabanında listelenmesi, filtrelenmesi, sıralanması ve Excel / CSV
+              import-export işlemlerini sağlayan RESTful API. <strong>Clean Architecture</strong> prensipleriyle
+              API · Application · Domain · Infrastructure katmanlı mimari; FluentValidation, CsvHelper,
+              ClosedXML ve Swagger entegrasyonları.
+            </p>
+            <ul class="project__highlights">
+              <li>DI · Repository pattern · xUnit birim testleri</li>
+              <li>Dosya ve klasör bazlı toplu CSV / Excel import, filtreli export</li>
+              <li>FluentValidation ile veri doğrulama; global hata middleware'i</li>
+              <li>12 endpoint, sayfalama + arama + filtreleme + sıralama</li>
+            </ul>
+            <div class="chips chips--mono">
+              <span class="chip">.NET 8</span>
+              <span class="chip">C# 12</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">EF Core 8</span>
+              <span class="chip">FluentValidation</span>
+              <span class="chip">xUnit</span>
+              <span class="chip">Swagger</span>
+            </div>
+          </article>
+
+          <article class="project project--featured">
+            <header class="project__head">
+              <div class="project__titles">
+                <span class="project__phase">Faz 02 · Kurumsal Mimari</span>
+                <h3 class="project__name">Sosyal Yardım Takip Sistemi</h3>
+                <p class="project__subtitle">T.C. İletişim Başkanlığı · Full-Stack başvuru yönetimi</p>
+              </div>
+              <span class="badge badge--gov">
+                <i class="fa-solid fa-landmark" aria-hidden="true"></i>
+                Devlet / Cumhurbaşkanlığı
+              </span>
+            </header>
+            <p class="project__desc">
+              Cumhurbaşkanlığı İletişim Başkanlığı Bilgi İşlem Dairesi stajımda geliştirdiğim; sosyal
+              yardım başvurularının dijital yönetimi için Django REST Framework + React + Material-UI
+              tabanlı <strong>full-stack uygulama</strong>. Admin / Sosyal Çalışan / Yardım Alan /
+              Gönüllü olmak üzere dört rol, JWT kimlik doğrulama ve başvuru yaşam döngüsü yönetimi.
+            </p>
+            <ul class="project__highlights">
+              <li>Django 5 · DRF · PostgreSQL · JWT · rol tabanlı yetkilendirme (RBAC)</li>
+              <li>React 18 · Material-UI · Context API · Axios</li>
+              <li>Başvuru yaşam döngüsü: Beklemede → İncelemede → Onay / Red / İade</li>
+              <li>Kurum içi kullanım için teslim edildi (kamu altyapısında dağıtım dairece yönetilir)</li>
+            </ul>
+            <div class="chips chips--mono">
+              <span class="chip">Django</span>
+              <span class="chip">DRF</span>
+              <span class="chip">React</span>
+              <span class="chip">Material-UI</span>
+              <span class="chip">JWT</span>
+              <span class="chip">PostgreSQL</span>
+            </div>
+          </article>
+
+          <article class="project project--featured">
+            <header class="project__head">
+              <div class="project__titles">
+                <span class="project__phase">Faz 02 · Kurumsal Mimari</span>
+                <h3 class="project__name">Belgem</h3>
+                <p class="project__subtitle">T.C. İletişim Başkanlığı için güvenli WYSIWYG editör</p>
+              </div>
+              <span class="badge badge--gov">
+                <i class="fa-solid fa-landmark" aria-hidden="true"></i>
+                Devlet / Cumhurbaşkanlığı
+              </span>
+            </header>
+            <p class="project__desc">
+              Cumhurbaşkanlığı İletişim Başkanlığı için geliştirilen, <strong>saf JavaScript (Vanilla JS)</strong>
+              tabanlı, sunucu bağımsız (client-side) ve güvenli bir WYSIWYG metin editörü. Kurumsal veri
+              güvenliği ve dijital belge yönetimi ihtiyaçları için tasarlandı.
+            </p>
+            <ul class="project__highlights">
+              <li>Sunucu bağımsız, client-side çalışan güvenli editör</li>
+              <li>Kurumsal ihtiyaçlara göre özelleştirilmiş UI ve metin işleme</li>
+              <li>Bağımlılık minimumu — bakım ve güvenlik avantajı</li>
+            </ul>
+            <div class="chips chips--mono">
+              <span class="chip">Vanilla JS</span>
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">Client-Side</span>
+            </div>
+          </article>
+
+          <article class="project project--featured">
+            <header class="project__head">
+              <div class="project__titles">
+                <span class="project__phase">Faz 03 · Derin Teknoloji</span>
+                <h3 class="project__name">İçerik Fabrikası — Video Üretim Pipeline'ı</h3>
+                <p class="project__subtitle">Senaryodan MP4'e uçtan uca AI orkestrasyonu</p>
+              </div>
+              <span class="badge badge--ai">
+                <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+                Uçtan Uca AI
+              </span>
+            </header>
+            <p class="project__desc">
+              9:16 dikey kısa-form video bölümlerinin üretimini otomatikleştiren Streamlit uygulaması.
+              Gemini 2.5 Flash yazar, Together AI FLUX.1 Schnell görsel üreteci, InsightFace yüz değişimi,
+              Playwright / HTML konuşma balonu kompozitörü ve MoviePy video birleştiricisini zincirler.
+            </p>
+            <ul class="project__highlights">
+              <li>Story Bible → Screenwriter → Render Engine → Video Assembler (4 sekme)</li>
+              <li>3 API anahtarlı Gemini rotasyonu + retry/backoff mimarisi</li>
+              <li>Per-episode manifest.json, atomik YAML yazımı, Türkçe slug</li>
+              <li>Opsiyonel InsightFace inswapper_128 yüz değişimi (CPU)</li>
+            </ul>
+            <div class="chips chips--mono">
+              <span class="chip">Python</span>
+              <span class="chip">Streamlit</span>
+              <span class="chip">Gemini 2.5</span>
+              <span class="chip">Together AI</span>
+              <span class="chip">InsightFace</span>
+              <span class="chip">Playwright</span>
+              <span class="chip">MoviePy</span>
+            </div>
+          </article>
+
+          <article class="project project--featured">
+            <header class="project__head">
+              <div class="project__titles">
+                <span class="project__phase">Faz 03 · Derin Teknoloji</span>
+                <h3 class="project__name">Script-to-Sub</h3>
+                <p class="project__subtitle">Türkçe video içerikleri için iki modlu altyazı orkestrasyonu</p>
+              </div>
+              <span class="badge badge--ai">
+                <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                Hata Toleranslı AI
+              </span>
+            </header>
+            <p class="project__desc">
+              <strong>Mod A</strong> (script-aware): Whisper sadece zamanlama kaynağı, görüntülenen metin her
+              zaman kullanıcının yazdığı script. <strong>Mod B</strong> (autonomous): Whisper transkribe eder,
+              Gemini Flash fonetik/TDK/sayı düzeltmesi yapar, kelime timestamp'leri ile yeniden hizalanır.
+              Demucs vokal izolasyonu + ASS render + FFmpeg libass ile piksel-mükemmel çıktı.
+            </p>
+            <ul class="project__highlights">
+              <li>3 anahtar × 3 model = 9 kombinasyonlu Gemini fallback matrisi</li>
+              <li>Akıllı hata sınıflandırması: 429 quota / 503 overload / 401 auth</li>
+              <li>Türkçe stemmer + yabancı kökenli özel isimler için genişletilebilir fonetik sözlük</li>
+              <li>9 alt modüllü modüler yapı · tek kaynak yapılandırma</li>
+            </ul>
+            <div class="chips chips--mono">
+              <span class="chip">faster-whisper</span>
+              <span class="chip">Demucs v4</span>
+              <span class="chip">Gemini Flash</span>
+              <span class="chip">FFmpeg · libass</span>
+              <span class="chip">rapidfuzz</span>
+              <span class="chip">Streamlit</span>
+            </div>
+          </article>
+
+          <article class="project project--featured">
+            <header class="project__head">
+              <div class="project__titles">
+                <span class="project__phase">Faz 03 · Derin Teknoloji</span>
+                <h3 class="project__name">Otonom WhatsApp CRM &amp; Satış Asistanı</h3>
+                <p class="project__subtitle">Afinitem · n8n orkestrasyonlu, FastAPI'ye taşınabilir otonom AI iş akışı</p>
+              </div>
+              <span class="badge badge--ai">
+                <i class="fa-solid fa-robot" aria-hidden="true"></i>
+                Otonom AI · Canlıda
+              </span>
+            </header>
+            <p class="project__desc">
+              Standart bir "soru-cevap" botundan öte; <strong>CRM ile entegre</strong>, asenkron çalışan ve
+              kendi inisiyatifiyle ancak <strong>sıfır halüsinasyonla</strong> satış kapatabilen bir yapay zeka
+              ekosistemi. Eksik veride fiyat uydurmaz — profili tamamlayana kadar müşteriyi yönlendirir ve
+              CRM'den doğrulanmış teklifi sunar.
+            </p>
+            <ul class="project__highlights">
+              <li><strong>Şartlı satış + sıfır halüsinasyon:</strong> CRM doğrulamasıyla fiyat ve teklif üretir</li>
+              <li><strong>Asenkron veri madencisi:</strong> Ana sohbeti yavaşlatmadan arka planda karar değişikliklerini veritabanına işler</li>
+              <li><strong>Vision AI + belge tanıma:</strong> Dekont ve belgeleri okur, hukuki sınırları bilerek onayı insana bırakır</li>
+              <li><strong>Admin override:</strong> Bir temsilci sohbete dahil olduğunda AI kendini 45 dk askıya alır</li>
+            </ul>
+            <div class="chips chips--mono">
+              <span class="chip">n8n</span>
+              <span class="chip">OpenAI</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">Vision AI</span>
+              <span class="chip">CRM Entegrasyonu</span>
+              <span class="chip">Webhook</span>
+            </div>
+          </article>
+
+          <article class="project project--featured">
+            <header class="project__head">
+              <div class="project__titles">
+                <span class="project__phase">Faz 03 · Derin Teknoloji</span>
+                <h3 class="project__name">Otonom YouTube İçerik Fabrikası</h3>
+                <p class="project__subtitle">Afinitem · Uçtan uca video üretim &amp; yayınlama pipeline'ı</p>
+              </div>
+              <span class="badge badge--ai">
+                <i class="fa-solid fa-tower-broadcast" aria-hidden="true"></i>
+                Uçtan Uca AI · Otomasyon
+              </span>
+            </header>
+            <p class="project__desc">
+              İnsan müdahalesi olmadan çalışan, senaryo üretiminden YouTube'a yayınlamaya kadar tüm süreci
+              otomatize eden bir içerik üretim mimarisi. Gemini, Pixabay, TTS ve YouTube Data API'ları
+              <strong>tek bir n8n orkestrasyonunda</strong> zincirlenerek günlük/haftalık kadrajda kanal
+              beslemesi gerçekleştirilir.
+            </p>
+            <ul class="project__highlights">
+              <li>AI destekli senaryo üretimi + TTS ile seslendirme ve segment zamanlama</li>
+              <li>Gemini anahtar-kelime çıkarımı → Pixabay API üzerinden konuya uygun stok video toplama</li>
+              <li>Döngüsel (loop) video birleştirme + altyazı + arka plan müziği entegrasyonu</li>
+              <li>SEO uyumlu metadata (başlık, açıklama, etiket) + YouTube Data API ile otomatik yayınlama</li>
+            </ul>
+            <div class="chips chips--mono">
+              <span class="chip">n8n</span>
+              <span class="chip">Gemini API</span>
+              <span class="chip">Pixabay API</span>
+              <span class="chip">YouTube Data API</span>
+              <span class="chip">TTS</span>
+              <span class="chip">FFmpeg</span>
+            </div>
+          </article>
+
+          <article class="project project--featured">
+            <header class="project__head">
+              <div class="project__titles">
+                <span class="project__phase">Faz 03 · Derin Teknoloji</span>
+                <h3 class="project__name">BERTurk — Türkçe Duygu Analizi (Bitirme Projesi)</h3>
+                <p class="project__subtitle">Web kazıma veri seti · sınıf dengesizliği · XAI çalışmaları</p>
+              </div>
+              <span class="badge badge--research">
+                <i class="fa-solid fa-flask" aria-hidden="true"></i>
+                Ar-Ge · Devam Ediyor
+              </span>
+            </header>
+            <p class="project__desc">
+              Türkçe otel yorumları üzerinde <strong>BERTurk</strong> tabanlı duygu analizi ve
+              açıklanabilir AI (XAI) çalışması. <strong>Web kazıma (web scraping)</strong>
+              ile oluşturulmuş doğal veri seti, sınıf dengesizliği (class imbalance) optimizasyonu
+              ve karşılaştırmalı metrik analizini içeren, iki kişilik devam eden lisans bitirme
+              projesi.
+            </p>
+            <ul class="project__highlights">
+              <li>BERTurk transformer ince ayarı (fine-tuning) · Hugging Face pipeline</li>
+              <li>Doğal veri seti üretimi için web kazıma + veri temizleme hattı</li>
+              <li>Sınıf dengesizliği optimizasyonu: oversampling, sınıf ağırlıkları, focal loss</li>
+              <li>XAI: SHAP / LIME ile yorumlanabilir model çıktıları</li>
+            </ul>
+            <div class="chips chips--mono">
+              <span class="chip">BERTurk</span>
+              <span class="chip">Hugging Face</span>
+              <span class="chip">PyTorch</span>
+              <span class="chip">Web Kazıma</span>
+              <span class="chip">XAI · SHAP</span>
+            </div>
+          </article>
+
+          <article class="project project--featured">
+            <header class="project__head">
+              <div class="project__titles">
+                <span class="project__phase">Faz 03 · Derin Teknoloji</span>
+                <h3 class="project__name">Akıllı OCR Sistemi</h3>
+                <p class="project__subtitle">Derin öğrenme tabanlı metin tanıma + Web OCR</p>
+              </div>
+              <span class="badge badge--ai">
+                <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+                Veri İşleme & Araç Geliştirme
+              </span>
+            </header>
+            <p class="project__desc">
+              TensorFlow / Keras ile eğitilen derin öğrenme modelleri ve OpenCV görüntü işleme tekniklerini
+              birleştiren, Flask tabanlı Web-OCR uygulaması. Görüntüden / belgeden anlamlı veri çıkarma, dosya
+              parsing ve gerçek dünya otomasyon yetenekleri için pratik bir araç.
+            </p>
+            <ul class="project__highlights">
+              <li>TensorFlow / Keras ile eğitilmiş karakter tanıma modeli</li>
+              <li>OpenCV ile ön işleme: binarizasyon, contour detection, gürültü azaltma</li>
+              <li>Flask web arayüzü — drag & drop yükleme ve sonuç görselleştirme</li>
+              <li>Görüntüden anlamlı metin ayıklama ve otomasyon akışlarına entegrasyon</li>
+            </ul>
+            <div class="chips chips--mono">
+              <span class="chip">Python</span>
+              <span class="chip">TensorFlow</span>
+              <span class="chip">Keras</span>
+              <span class="chip">OpenCV</span>
+              <span class="chip">Flask</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="minor">
+          <h3 class="minor__title" data-i18n="minor.title">Diğer Çalışmalar</h3>
+          <p class="minor__lede" data-i18n="minor.lede">Full-Stack uygulamalardan kurumsal araçlara — çeşitli problemler için geliştirdiğim çözümler.</p>
+
+          <h4 class="minor__subtitle">
+            <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+            <span data-i18n="minor.cat.fullstack">Full-Stack Uygulamalar</span>
+          </h4>
+          <div class="minor__grid">
+            <div class="minor-card">
+              <h4>Castlyo Platform</h4>
+              <p>Next.js 14 + NestJS + Drizzle ORM + Redis + Docker · monorepo mimarisiyle geliştirdiğim, casting ve yetenek eşleştirme platformu.</p>
+              <div class="chips chips--sm"><span class="chip">Next.js</span><span class="chip">NestJS</span><span class="chip">Drizzle</span><span class="chip">Redis</span><span class="chip">Docker</span></div>
+            </div>
+            <div class="minor-card">
+              <h4>İnşaat Yönetim Sistemi</h4>
+              <p>Flask + MySQL · token tabanlı güvenlik, otomatik PDF raporlama, kaynak yönetimi.</p>
+              <div class="chips chips--sm"><span class="chip">Flask</span><span class="chip">MySQL</span><span class="chip">PDF</span></div>
+            </div>
+            <div class="minor-card">
+              <h4>Kurum İçi Belge İmza Süreci Yönetim Sistemi</h4>
+              <p>T.C. İletişim Başkanlığı · Node.js + Express + MySQL + React · dinamik imza sırası, JWT rol tabanlı yetkilendirme, PDF önizleme ve e-posta bildirimleri ile dijital imza iş akışı.</p>
+              <div class="chips chips--sm"><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">Sequelize</span><span class="chip">MySQL</span><span class="chip">React</span><span class="chip">JWT</span></div>
+            </div>
+            <div class="minor-card">
+              <h4>Evrak Takip Sistemi</h4>
+              <p>T.C. İletişim Başkanlığı · Flask + MySQL tabanlı full-stack evrak yönetimi · evrak yaşam döngüsü (kayıt → onay / red / iade), RBAC ve istatistik dashboard'u.</p>
+              <div class="chips chips--sm"><span class="chip">Flask</span><span class="chip">MySQL</span><span class="chip">RBAC</span><span class="chip">Dashboard</span></div>
+            </div>
+            <div class="minor-card">
+              <h4>Uçuş Rezervasyon Mobil</h4>
+              <p>React Native + Expo + Node.js + MySQL · sepet yönetimi ve PDF e-bilet ile full-stack mobil uygulama.</p>
+              <div class="chips chips--sm"><span class="chip">React Native</span><span class="chip">Node.js</span><span class="chip">MySQL</span></div>
+            </div>
+            <div class="minor-card">
+              <h4>AI Destekli KPI Asistanı</h4>
+              <p>Gemini API + Streamlit · şirket verilerini analiz edip görsel KPI önerileri sunar.</p>
+              <div class="chips chips--sm"><span class="chip">Streamlit</span><span class="chip">Gemini</span></div>
+            </div>
+            <div class="minor-card">
+              <h4>AI Tabanlı Seslendirme Aracı</h4>
+              <p>Gemini Generative AI ile çoklu ses seçeneği ve dinamik dosya yönetimi sunan TTS uygulaması.</p>
+              <div class="chips chips--sm"><span class="chip">Flask</span><span class="chip">Gemini TTS</span></div>
+            </div>
+          </div>
+
+          <details class="minor__collapse">
+          <summary class="minor__subtitle">
+            <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+            <span data-i18n="minor.cat.tooling">Kurumsal Araç Geliştirme</span> <span class="minor__subtag" data-i18n="minor.cat.toolingSub">· T.C. İletişim Başkanlığı</span>
+            <span class="minor__collapse-hint" data-i18n="minor.cat.toolingHint">(10 araç · göster)</span>
+          </summary>
+          <div class="minor__grid">
+            <div class="minor-card">
+              <h4>Metin Temizleyici / Standardlaştırıcı</h4>
+              <p>Veri kalitesi için Türkçe-duyarlı metin normalize aracı · Tkinter GUI, kurumsal kimlik paleti.</p>
+              <div class="chips chips--sm"><span class="chip">Python</span><span class="chip">Tkinter</span></div>
+            </div>
+            <div class="minor-card">
+              <h4>Salt Okunur Belge Kilitleyici</h4>
+              <p>.docx ve .xlsx dosyalarını parola korumalı salt okunur sürümlere dönüştüren masaüstü aracı.</p>
+              <div class="chips chips--sm"><span class="chip">Python</span><span class="chip">Tkinter</span></div>
+            </div>
+            <div class="minor-card">
+              <h4>Kişisel Veri Maskeleme Aracı</h4>
+              <p>TXT / PDF / DOCX'te TCKN, IBAN, telefon, e-posta tespiti ve PDF redaction (karartma).</p>
+              <div class="chips chips--sm"><span class="chip">Python</span><span class="chip">PDF</span><span class="chip">Regex</span></div>
+            </div>
+            <div class="minor-card">
+              <h4>Video Logo & İçerik Ekleme Aracı</h4>
+              <p>MoviePy + PIL · kurumsal videolara otomatik logo, tarih ve başlık ekleme; ses korumalı.</p>
+              <div class="chips chips--sm"><span class="chip">MoviePy</span><span class="chip">PIL</span></div>
+            </div>
+            <div class="minor-card">
+              <h4>Anket Sonuç Analizcisi</h4>
+              <p>Excel / CSV'den otomatik istatistiksel analiz · dinamik Bar / Pie grafik, Excel + PNG dışa aktarım.</p>
+              <div class="chips chips--sm"><span class="chip">Pandas</span><span class="chip">Matplotlib</span></div>
+            </div>
+            <div class="minor-card">
+              <h4>XML / JSON Veri Dönüştürücü</h4>
+              <p>Kurumlar arası veri alışverişi için XML ve JSON dosyalarını CSV / Excel'e dönüştüren GUI aracı.</p>
+              <div class="chips chips--sm"><span class="chip">Python</span><span class="chip">Pandas</span></div>
+            </div>
+            <div class="minor-card">
+              <h4>PDF Ayrıştırıcı</h4>
+              <p>GUI ile sayfa aralığı seçip yeni PDF üretme aracı · orijinal dosya bozulmadan çıktı üretir.</p>
+              <div class="chips chips--sm"><span class="chip">Python</span><span class="chip">PyPDF</span></div>
+            </div>
+            <div class="minor-card">
+              <h4>Zamanlayıcı / Hatırlatıcı</h4>
+              <p>Sistem tepsisi ikonuyla çalışan; zamanlanmış görevler, sesli + görsel bildirim, JSON kalıcılık.</p>
+              <div class="chips chips--sm"><span class="chip">Python</span><span class="chip">pystray</span></div>
+            </div>
+            <div class="minor-card">
+              <h4>Barkod Oluşturucu</h4>
+              <p>CLI üzerinden EAN13 / Code128 / ISBN13 destekli PNG barkod üretici.</p>
+              <div class="chips chips--sm"><span class="chip">Python</span><span class="chip">CLI</span></div>
+            </div>
+            <div class="minor-card">
+              <h4>Belge / PDF Dönüştürücü</h4>
+              <p>Word, Excel, PowerPoint ve görselleri PDF'e dönüştüren Flask + Tailwind tabanlı araç.</p>
+              <div class="chips chips--sm"><span class="chip">Flask</span><span class="chip">Tailwind</span></div>
+            </div>
+          </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="egitim">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__kicker" data-i18n="edu.kicker">05 — Eğitim & Sertifikalar</span>
+          <h2 class="section__title" data-i18n-html="edu.title">Akademik temel ve <span class="accent">sürekli öğrenme</span>.</h2>
+        </header>
+
+        <div class="edu-stack">
+          <div class="edu-block">
+            <h3 class="edu__heading" data-i18n="edu.col.education">Eğitim</h3>
+            <div class="edu-block__grid">
+              <article class="edu-item">
+                <h4>İstinye Üniversitesi</h4>
+                <p class="edu-item__role">Lisans · Yazılım Mühendisliği</p>
+                <p class="edu-item__meta">2022 — Haziran 2026 (planlanan) <br> AGNO: <strong>3.58 / 4.00</strong></p>
+              </article>
+
+              <article class="edu-item">
+                <h4>Yapay Zeka ve Teknoloji Akademisi</h4>
+                <p class="edu-item__role">Bursiyer Programı · Yapay Zeka</p>
+                <p class="edu-item__meta">
+                  T.C. Sanayi ve Teknoloji Bakanlığı · Google · T3 · Girişimcilik Vakfı
+                  <br>Aralık 2025 — Devam Ediyor
+                </p>
+              </article>
+
+              <article class="edu-item">
+                <h4>Veri Analizi Okulu</h4>
+                <p class="edu-item__role">Yapay Zeka ve Makine Öğrenmesi Modülü</p>
+                <p class="edu-item__meta">
+                  YÖK · Marmara Üni. (NSAE) · ODTÜ · İTÜ · Boğaziçi<br><span data-i18n="date.oct2025now">Ekim 2025 — Devam Ediyor</span>
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="edu-block">
+            <h3 class="edu__heading" data-i18n="edu.col.certs">Sertifikalar & Programlar</h3>
+            <div class="certs-cols">
+              <div class="certs-col">
+                <div class="cert-group">
+                  <h4 class="cert-group__title">
+                    <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                    AI & Teknik
+                  </h4>
+                  <ul class="cert-list" role="list">
+                    <li class="cert"><i class="fa-solid fa-certificate" aria-hidden="true"></i><span><strong>AI Agent Geliştirme ve MCP Temelleri</strong><em>Siber Kulüpler Birliği · 2026</em></span></li>
+                    <li class="cert"><i class="fa-solid fa-certificate" aria-hidden="true"></i><span><strong>Garanti BBVA — Teknoloji Serisi (GenAI · ML · Prompt)</strong><em>Coderspace · 2025</em></span></li>
+                    <li class="cert"><i class="fa-solid fa-certificate" aria-hidden="true"></i><span><strong>Cloud & DevOps MiniCamp</strong><em>Globally Check · 2025</em></span></li>
+                    <li class="cert"><i class="fa-solid fa-certificate" aria-hidden="true"></i><span><strong>DevSecOps Eğitimi — 2025 Siber Yaz Kampı</strong><em>Siber Kulüpler Birliği · 2025</em></span></li>
+                    <li class="cert"><i class="fa-solid fa-certificate" aria-hidden="true"></i><span><strong>Train the Trainer: AI & ML on Google Cloud</strong><em>Google for Developers · 2024</em></span></li>
+                    <li class="cert"><i class="fa-solid fa-certificate" aria-hidden="true"></i><span><strong>Foundations: Data, Data, Everywhere</strong><em>Google · Coursera · 2026</em></span></li>
+                    <li class="cert"><i class="fa-solid fa-certificate" aria-hidden="true"></i><span><strong>Web Uygulamaları Geliştirme Eğitimi</strong><em>Yapay Zeka ve Teknoloji Akademisi · 2026</em></span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="certs-col">
+                <div class="cert-group">
+                  <h4 class="cert-group__title">
+                    <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+                    Girişimcilik & İş
+                  </h4>
+                  <ul class="cert-list" role="list">
+                    <li class="cert"><i class="fa-solid fa-certificate" aria-hidden="true"></i><span><strong>Temel Girişimcilik Eğitimi</strong><em>Yapay Zeka ve Teknoloji Akademisi · 2026</em></span></li>
+                    <li class="cert"><i class="fa-solid fa-certificate" aria-hidden="true"></i><span><strong>Girişimciler için Finans Eğitimi</strong><em>Yapay Zeka ve Teknoloji Akademisi · 2026</em></span></li>
+                    <li class="cert"><i class="fa-solid fa-certificate" aria-hidden="true"></i><span><strong>Girişimciler için Hukuk Eğitimi</strong><em>Yapay Zeka ve Teknoloji Akademisi · 2026</em></span></li>
+                    <li class="cert"><i class="fa-solid fa-certificate" aria-hidden="true"></i><span><strong>Girişimciler için İK Eğitimi</strong><em>Yapay Zeka ve Teknoloji Akademisi · 2026</em></span></li>
+                    <li class="cert"><i class="fa-solid fa-certificate" aria-hidden="true"></i><span><strong>Proje Yönetiminin Temelleri</strong><em>Google · Coursera · 2026</em></span></li>
+                  </ul>
+                </div>
+
+                <div class="cert-group">
+                  <h4 class="cert-group__title">
+                    <i class="fa-solid fa-users" aria-hidden="true"></i>
+                    Liderlik & Soft Skills
+                  </h4>
+                  <ul class="cert-list" role="list">
+                    <li class="cert"><i class="fa-solid fa-certificate" aria-hidden="true"></i><span><strong>Temel Liderlik Programı</strong><em>BireBir İnsan Akademisi · 2026</em></span></li>
+                    <li class="cert"><i class="fa-solid fa-certificate" aria-hidden="true"></i><span><strong>TechNova Zirvesi Organizasyon Sertifikası</strong><em>GDG on Campus İstinye · 2025</em></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="referanslar">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__kicker" data-i18n="ref.kicker">06 — Referanslar</span>
+          <h2 class="section__title" data-i18n-html="ref.title">Birlikte çalıştığım <span class="accent">kıymetli isimler</span>.</h2>
+          <p class="section__lede" data-i18n="ref.lede">
+            Staj ve proje süreçlerinde mentorluğundan faydalandığım, kurumsal ekip liderliği yapan
+            referanslarım. Detaylı iletişim ve değerlendirme için talep üzerine bilgi paylaşılır.
+          </p>
+        </header>
+
+        <div class="refs">
+          <article class="ref-card">
+            <div class="ref-card__avatar" aria-hidden="true">BA</div>
+            <div class="ref-card__body">
+              <h3 class="ref-card__name">Dr. Buğra Ayan</h3>
+              <p class="ref-card__role" data-i18n="ref.ba.role">Bilgi İşlem Daire Başkanı · T.C. İletişim Başkanlığı</p>
+              <p class="ref-card__meta" data-i18n="ref.ba.meta">Öğretim Görevlisi · Ankara &amp; Gazi Üniversitesi</p>
+              <p class="ref-card__ctx" data-i18n="ref.ba.ctx">
+                Cumhurbaşkanlığı İletişim Başkanlığı Bilgi İşlem Dairesi stajı süresince doğrudan
+                yönetiminde kurumsal yazılım projelerinde görev aldım.
+              </p>
+            </div>
+          </article>
+
+          <article class="ref-card">
+            <div class="ref-card__avatar" aria-hidden="true">İY</div>
+            <div class="ref-card__body">
+              <h3 class="ref-card__name">Dr. İlkay Yelmen</h3>
+              <p class="ref-card__role" data-i18n="ref.iy.role">Teknoloji Ekibi Lideri · Merzigo</p>
+              <p class="ref-card__meta" data-i18n="ref.iy.meta">Öğretim Üyesi · İstinye Üniversitesi</p>
+              <p class="ref-card__ctx" data-i18n="ref.iy.ctx">
+                Merzigo'daki .NET 8 · Clean Architecture · CQRS odaklı stajımın teknik liderliğini
+                yürütüyor.
+              </p>
+            </div>
+          </article>
+
+          <article class="ref-card">
+            <div class="ref-card__avatar" aria-hidden="true">ON</div>
+            <div class="ref-card__body">
+              <h3 class="ref-card__name">Oğuzhan Nari</h3>
+              <p class="ref-card__role" data-i18n="ref.on.role">Genel Müdür · Afinitem</p>
+              <p class="ref-card__meta" data-i18n="ref.on.meta">Yazılım Mühendisi</p>
+              <p class="ref-card__ctx" data-i18n="ref.on.ctx">
+                Afinitem'deki start-up çevikliği içinde ürün odaklı mühendislik vizyonunu kendisinden
+                edindim.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <p class="refs__note">
+          <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+          <span data-i18n="ref.note">Referans iletişim bilgileri başvuru sürecinde talep üzerine paylaşılır.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--cta" id="iletisim">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <span class="section__kicker" data-i18n="contact.kicker">07 — İletişim</span>
+          <h2 class="section__title" data-i18n-html="contact.title">Birlikte çalışalım mı? <span class="accent">Açığım.</span></h2>
+          <p class="section__lede" data-i18n="contact.lede">
+            Junior, freelance ya da teknik işbirliği — en hızlı ulaşmak için e-posta.
+            Haziran 2026 ortasından itibaren tam zamanlı uygun.
+          </p>
+        </header>
+
+        <div class="contact">
+          <a class="contact-card" href="mailto:demirmuhammedesat@gmail.com">
+            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+            <div>
+              <span class="contact-card__label" data-i18n="contact.label.email">E-posta</span>
+              <span class="contact-card__value">demirmuhammedesat@gmail.com</span>
+            </div>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/muhammed-esat-demir" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            <div>
+              <span class="contact-card__label">LinkedIn</span>
+              <span class="contact-card__value">muhammed-esat-demir</span>
+            </div>
+          </a>
+          <a class="contact-card" href="https://github.com/muhammedesatdemir" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <div>
+              <span class="contact-card__label">GitHub</span>
+              <span class="contact-card__value">@muhammedesatdemir</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy" data-i18n-html="footer.copy">© <span id="year"></span> Muhammed Esat Demir. Tüm hakları saklıdır.</p>
+      <p class="footer__built" data-i18n-html="footer.built">İstanbul, Türkiye</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Yukarı çık" title="Yukarı çık">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="assets/js-new/main.js" defer></script>
+</body>
+</html>
