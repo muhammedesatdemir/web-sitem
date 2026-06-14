@@ -98,7 +98,7 @@ npx serve .
 
 Ardından tarayıcıda `http://localhost:8000` adresine gidin.
 
----
+--- 
 
 ## i18n — Çeviri Nasıl Çalışır?
 
