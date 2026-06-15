@@ -23,7 +23,7 @@
       'hero.cta.projects': 'Öne Çıkan Projeleri Gör',
       'hero.cta.contact': 'İletişime Geç',
       'hero.meta.location': 'İstanbul, Türkiye',
-      'hero.meta.edu': 'İstinye Üniversitesi · AGNO 3.60',
+      'hero.meta.edu': 'İstinye Üniversitesi · AGNO 3.62',
       'hero.meta.work': 'Kamu · Kurumsal · Start-up Deneyimi',
       'hero.meta.availability': 'Tam zamanlı rollere açık',
 
@@ -101,7 +101,7 @@
       /* --- education items --- */
       'edu.isu.name': 'İstinye Üniversitesi',
       'edu.isu.role': 'Lisans · Yazılım Mühendisliği',
-      'edu.isu.meta': '2022 — Haziran 2026 (Mezun) <br> AGNO: <strong>3.60 / 4.00</strong>',
+      'edu.isu.meta': '2022 — Haziran 2026 (Mezun) <br> AGNO: <strong>3.62 / 4.00</strong>',
       'edu.aia.name': 'Yapay Zeka ve Teknoloji Akademisi',
       'edu.aia.role': 'Bursiyer Programı · Yapay Zeka',
       'edu.aia.meta': 'T.C. Sanayi ve Teknoloji Bakanlığı · Google · T3 · Girişimcilik Vakfı<br>Aralık 2025 — Haziran 2026',
@@ -330,7 +330,7 @@
       'hero.cta.projects': 'View Featured Projects',
       'hero.cta.contact': 'Get in Touch',
       'hero.meta.location': 'Istanbul, Türkiye',
-      'hero.meta.edu': 'Istinye University · GPA 3.60',
+      'hero.meta.edu': 'Istinye University · GPA 3.62',
       'hero.meta.work': 'Public · Corporate · Start-up Experience',
       'hero.meta.availability': 'Open to full-time roles',
 
@@ -408,7 +408,7 @@
       /* --- education items --- */
       'edu.isu.name': 'Istinye University',
       'edu.isu.role': 'B.Sc. · Software Engineering',
-      'edu.isu.meta': '2022 — Jun 2026 (Graduated) <br> GPA: <strong>3.60 / 4.00</strong>',
+      'edu.isu.meta': '2022 — Jun 2026 (Graduated) <br> GPA: <strong>3.62 / 4.00</strong>',
       'edu.aia.name': 'AI & Technology Academy',
       'edu.aia.role': 'Scholarship Program · Artificial Intelligence',
       'edu.aia.meta': 'Ministry of Industry and Technology · Google · T3 · Entrepreneurship Foundation<br>Dec 2025 — Jun 2026',
