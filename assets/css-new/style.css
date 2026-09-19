@@ -1222,9 +1222,22 @@ p { margin: 0; }
 
 /* ---------- References ---------- */
 .refs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 1.25rem;
+}
+.refs__row {
+  display: grid;
+  gap: 1.25rem;
+}
+.refs__row--top {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.refs__row--bottom {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 780px;
+  width: 100%;
+  margin: 0 auto;
 }
 .ref-card {
   display: flex;
@@ -1382,6 +1395,11 @@ p { margin: 0; }
   .about__stats { grid-template-columns: repeat(4, 1fr); }
   .edu-block__grid { grid-template-columns: 1fr 1fr; }
   .certs-cols { grid-template-columns: 1fr; }
+  .refs__row--top,
+  .refs__row--bottom {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: none;
+  }
 }
 
 @media (max-width: 780px) {
@@ -1419,6 +1437,8 @@ p { margin: 0; }
   .nav__burger { display: flex; }
 
   .about__stats { grid-template-columns: repeat(2, 1fr); }
+  .refs__row--top,
+  .refs__row--bottom { grid-template-columns: 1fr; }
 
   .timeline { padding-left: 1.5rem; }
   .timeline__dot { left: -1.5rem; }
